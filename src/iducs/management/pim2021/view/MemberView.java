@@ -10,7 +10,7 @@ public class MemberView {
         System.out.printf("%-17s", "이메일" + "\t");
         System.out.printf("%-5s","이름" + "\t");
         System.out.printf("%-15s", "연락처" + "\t");
-        System.out.println("주소");
+        System.out.println("주소" + "\n");
     }
 
     public void printList(List<Member> memberList) {
@@ -24,7 +24,7 @@ public class MemberView {
         System.out.print(m.getEmail() + "\t");
         System.out.print(m.getName() + "\t");
         System.out.print(m.getPhone() + "\t");
-        System.out.print(m.getAddress() + "\t");
+        System.out.print(m.getAddress() + "\n");
         return null;
     }
 

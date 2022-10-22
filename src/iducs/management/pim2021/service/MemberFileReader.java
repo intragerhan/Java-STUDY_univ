@@ -19,7 +19,7 @@ public class MemberFileReader<T> {
         List<T> memberList = new ArrayList<T>();
         while (sc.hasNext()) {
             Member m = new Member();
-            String strArr[] = sc.nextLine().split("\t");    // tab 기호를 구분자로 사용하여 6개의 요소로 구분
+            String strArr[] = sc.nextLine().split(" ");    // space 기호를 구분자로 사용하여 6개의 요소로 구분
             m.setId(Integer.parseInt(strArr[0]));
             m.setEmail(strArr[1]);
             m.setPw(strArr[2]);

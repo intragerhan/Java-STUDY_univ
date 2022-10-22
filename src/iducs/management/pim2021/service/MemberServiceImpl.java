@@ -56,7 +56,13 @@ public abstract class MemberServiceImpl<T> implements MemberService<T> {
         // 담을 객체 정보 가져오기
         List<T> memberList = memberRepository.getMemberList();
         // 멤버 id 값 가져오기 // 멤버 id 값 1증가
-        ((Member) member).setId(((Member) memberList.get(memberList.size() - 1)).getId() + 1);
+        if(memberList.size() > 0) {
+            ((Member) member).setId(
+                    ((Member) memberList.get(memberList.size() - 1)).getId() + 1);
+        } else {
+            ((Member) member).setId(1);
+        }
+
 
         if (memberRepository.create(member) > 0) {
             memberView.printSuccess("회원 등록");

@@ -19,13 +19,13 @@ public class MemberFileWriter<T> {
         for(T member1 : memberList) {
             try {
                 Member m = (Member) member1;
-                fw.write(m.getId() + "\t");
-                fw.write(m.getEmail() + "\t");
-                fw.write(m.getPw() + "\t");
-                fw.write(m.getName() + "\t");
-                fw.write(m.getPhone() + "\t");
-                fw.write(m.getAddress() + "\t");
-                // fw.flush();
+                fw.write(m.getId() + " ");
+                fw.write(m.getEmail() + " ");
+                fw.write(m.getPw() + " ");
+                fw.write(m.getName() + " ");
+                fw.write(m.getPhone() + " ");
+                fw.write(m.getAddress() + "\n");
+//                 fw.flush();
             }catch (IOException e) {
                 e.printStackTrace();
             }
