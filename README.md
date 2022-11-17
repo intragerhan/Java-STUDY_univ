@@ -12,6 +12,9 @@ db는 txt파일로 대체하였습니다.
 
 🙋‍♂️전반적인 흐름은 교수님의 소스를 이용하였으며, 그 안에서의 등록, 조회, 수정 등의 세부 기능들을 직접 구현하였습니다.
 
+#### 소스 코드
+https://github.com/intrager/Java-STUDY_univ/tree/master/src/iducs/management/pim2021
+
 #### 회원등록
 ![image](https://user-images.githubusercontent.com/77195486/197341669-784fa60f-c6d8-4e20-ba52-fcbce6c2fe87.png)
 
